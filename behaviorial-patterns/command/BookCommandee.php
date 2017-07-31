@@ -38,8 +38,8 @@ class BookCommandee{
 
     public function setStarsOff()
     {
-        $this->setAuthor(str_replace(' ','*',$this->getAuthor()));
-        $this->setTitle(str_replace(' ','*',$this->getTitle()));
+        $this->setAuthor(str_replace('*',' ',$this->getAuthor()));
+        $this->setTitle(str_replace('*',' ',$this->getTitle()));
     }
 
     public function getAuthorAndTitle()
